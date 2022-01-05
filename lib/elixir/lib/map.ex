@@ -515,7 +515,7 @@ defmodule Map do
       3
 
   """
-  @spec get(map, key, value) :: value
+  @spec get(map, key, default) :: value
   def get(map, key, default \\ nil) do
     case map do
       %{^key => value} ->
